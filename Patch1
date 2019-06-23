@@ -1,0 +1,57 @@
+// pre-processor directives
+#include "pch.h"
+#include <iostream>
+#include <string>
+#include <string.h>
+#include <fstream>
+#include <time.h>
+
+using namespace std;
+
+
+Void MainMenu(void)­  
+Void CharacterCreate()­  
+Void CharacterDelete(): (*extra credit from phase 4)­  
+Bool CheckChracterExist(fstream& characterFile, string characterPath)­  
+Void DuelMenu()­  
+Void PlayerSelect(string player, string& playerName, string& playerTitle, int& health, int& strength, int& defense, int& luck, string& faction, string& specialWeapon)­
+Void Player1VsPlayer2(string player1Name, string player1Title, int player1Health, int player1Strength, int player1Defense, int player1Luck, string player1Faction, string player1SpecialItem,string player2Name, stringplayer2Title, int player2Health, int player2Strength, int player2Defense, int player2Luck, string player2Faction, string player2SpecialItem)­  
+int Attack(int playerStrength, int playerDefense)
+
+int main(void)
+{
+MainMenu();
+}
+
+
+
+void MainMenu(void)
+{
+    cout << "Menu" << endl;
+		cout << "------------------" << endl;
+		cout << "1. Create a Character" << endl;
+		cout << "2. Delete a Character" << endl;
+		cout << "3. Duel" << endl;
+		cout << "4. Quit Game" << endl;
+		cout << "What would you like to do?" << endl;
+		cin >> userInput;
+    
+    if (userInput==1)
+    {
+    CharacterCreate();
+    }
+    
+    else if (userInput==3)
+    {
+    DuelMenu();
+    }
+    
+   else if (userInput==4)
+   {
+   exit (1);
+   } 
+   else
+   {
+   cout << "Invalid selection.  Please try again." << endl;
+   }
+}
